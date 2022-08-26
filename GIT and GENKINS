@@ -1,4 +1,7 @@
-Jenkins
+Jenkins:
+http://localhost:8080/
+sandeepbhutkar
+!
 #########################################################
 Source Code Management:
 give repo url and user id(sandeep.bhutkar@gmail.com) and password @
@@ -10,8 +13,12 @@ C:\Users\sbhutkar\AppData\Local\Programs\Python\Python310\python.exe
 Commands
 python -m venv env
 call ./env/Scripts/activate.bat
-pip install -r requirement.txt
+pip install -r requirements.txt
 pytest -v -s -m smoke --html=./Reports/report.html testCases/test_CreateCustomer.py 
+##############################################################################
+#or if no pytest installed
+cd TestCases
+python testcase.py
 ################################################################################
 python -m venv env
 call ./env/Scripts/activate.bat
@@ -33,7 +40,10 @@ git add -A   this will add all fle to staging
 git commit -m "some message"
 git push -u origin master
 
-Jenkins:
-http://localhost:8080/
-sandeepbhutkar
-!
+to create new branch from git bash
+$ git checkout -b <new_branch>
+to see all branch
+$ git branch
+to switch branch
+$ git switch master
+
